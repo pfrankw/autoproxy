@@ -1,3 +1,15 @@
+# Do it
+```shell
+docker run -d \
+	-e VIRTUAL_HOST=example.com \
+	-e WANT_SSL=1 \
+	-e HTTP_PORT=8080 \
+	some-options \
+	some-container
+```
+
+# THEN
+
 ```shell
 docker run -d \
 	--name autoproxy \
