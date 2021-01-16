@@ -1,3 +1,3 @@
 #!/bin/sh
 
-cd /opt && nohup ./autoproxy.py 2>&1 &
+cd /opt && python3 -u autoproxy.py &
