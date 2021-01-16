@@ -41,3 +41,7 @@ docker network connect some-network autoproxy
 ```shell
 docker start autoproxy
 ```
+
+
+# Enjoy
+auto routed HTTP containers and automatic letsencrypt on them
