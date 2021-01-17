@@ -11,6 +11,7 @@ RUN mkdir -p /tmp/letsencrypt
 COPY autoproxy.py /opt/autoproxy.py
 RUN chmod +x /opt/autoproxy.py
 
+COPY default.conf /etc/nginx/conf.d/default.conf
 COPY proxied.conf.tmpl /opt/proxied.conf.tmpl
 
 COPY 10-gen-certs.sh /docker-entrypoint.d/
